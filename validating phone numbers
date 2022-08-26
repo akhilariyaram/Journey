@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+for i in range(int(input())):
+    x=input()
+    if x[:1]=="9" or x[:1]=="8" or x[:1]=="7":
+        if len(x)==10 and x.isnumeric()==True:
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
