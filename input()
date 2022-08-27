@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a,b=input().split()
+e=input()
+f=e.replace('x',a)
+if eval(f)==int(b):
+    print(True)
+else:
+    print(False)
