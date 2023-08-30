@@ -1,0 +1,15 @@
+from collections import Counter
+name = int(input())
+list=list(map(int,input().split()))
+singers={}
+for i in list:
+    if i in singers:
+        singers[i]+=1
+    else:
+        singers[i]=1
+max=max(singers.values())
+fav=0
+for i in singers.values():
+    if i==max:
+        fav=fav+1
+print(fav)
